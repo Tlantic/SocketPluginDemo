@@ -1,0 +1,14 @@
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bin\Debug\resources.pri
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bin\Debug\AppxManifest.xml
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bin\Debug\CordovaApp.build.appxrecipe
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\priconfig.xml.intermediate
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\layout.resfiles.intermediate
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\resources.resfiles.intermediate
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\pri.resfiles.intermediate
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\priconfig.xml
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\layout.resfiles
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\resources.resfiles
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\pri.resfiles
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\LanguageQualifiers.txt
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\ProjectArchitectures.txt
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\_pkginfo.txt

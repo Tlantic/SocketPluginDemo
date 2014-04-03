@@ -1,0 +1,1 @@
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\CordovaApp.jsproj;neutral

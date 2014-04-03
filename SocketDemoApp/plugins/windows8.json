@@ -1,0 +1,13 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {},
+    "installed_plugins": {
+        "com.tlantic.plugins.socket": {
+            "PACKAGE_NAME": "SocketDemoApp"
+        }
+    },
+    "dependent_plugins": {}
+}
