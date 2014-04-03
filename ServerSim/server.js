@@ -28,9 +28,12 @@ serverInstance = function (socket) {
 
 	// handle incoming messages
 	socket.on('data', function (data) {
-		console.log('- Received information on port ', socket.localPort, ': ', data.toString('utf-8'));
-		console.log('- Replied to ' + socket.name);
-		socket.write('This is my answer: ' + Date.now().toString() + '\n');
+
+		if (data.length > 1 ) {
+			console.log('- Received information on port ', socket.localPort, ': ', data.toString('utf-8'));
+			console.log('- Replied to ' + socket.name);
+			socket.write('This is my answer: ' + Date.now().toString() + '\n');
+		}
 	});
 
 	// Remove client from list

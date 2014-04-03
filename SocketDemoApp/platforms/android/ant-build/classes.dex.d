@@ -1,12 +1,12 @@
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes.dex : \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes\com\tlantic\plugins\socket\Connection.class \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes\com\tlantic\plugins\socket\SocketPlugin$1.class \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes\com\tlantic\plugins\socket\SocketPlugin.class \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes\com\tlantic\socketdemo\BuildConfig.class \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes\com\tlantic\socketdemo\R$attr.class \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes\com\tlantic\socketdemo\R$drawable.class \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes\com\tlantic\socketdemo\R$string.class \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes\com\tlantic\socketdemo\R$xml.class \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes\com\tlantic\socketdemo\R.class \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\classes\com\tlantic\socketdemo\SocketDemoApp.class \
-D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\android\ant-build\dexedLibs\classes-6635bb9d5563a33f812bc56f2bac2c47.jar \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes.dex : \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes/com/tlantic/plugins/socket/Connection.class \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes/com/tlantic/plugins/socket/SocketPlugin$1.class \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes/com/tlantic/plugins/socket/SocketPlugin.class \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes/com/tlantic/socketdemo/BuildConfig.class \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes/com/tlantic/socketdemo/R$attr.class \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes/com/tlantic/socketdemo/R$drawable.class \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes/com/tlantic/socketdemo/R$string.class \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes/com/tlantic/socketdemo/R$xml.class \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes/com/tlantic/socketdemo/R.class \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/classes/com/tlantic/socketdemo/SocketDemoApp.class \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/dexedLibs/classes-f31ecfe9d504dd0e5a4b7278c865f664.jar \
