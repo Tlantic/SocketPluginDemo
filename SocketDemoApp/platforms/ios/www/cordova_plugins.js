@@ -11,7 +11,7 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.tlantic.plugins.socket": "0.2.0"
+    "com.tlantic.plugins.socket": "0.3.0"
 }
 // BOTTOM OF METADATA
 });

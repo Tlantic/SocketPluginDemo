@@ -48,22 +48,27 @@
             
             var host = "10.56.0.62",
             	port = 18002,
-            	data = "This is my fake data";
+            	data = "This is my fake data",
+                key = "";
             
             function stub(d) {
             	console.log(d);
             }
+
+            function onConnect(k) {
+                key = k;
+            }
             
             function connect() {
-            	window.tlantic.plugins.socket.connect(stub, stub, host, port);
+            	window.tlantic.plugins.socket.connect(onConnect, stub, host, port);
             }
             
             function send() {
-            	window.tlantic.plugins.socket.send(stub, stub, host, port, data);
+            	window.tlantic.plugins.socket.send(stub, stub, key, data);
             }
             
             function disconnect() {
-            	window.tlantic.plugins.socket.disconnect(stub, stub, host, port);
+            	window.tlantic.plugins.socket.disconnect(stub, stub, key);
             }
         
             function disconnectAll() {
@@ -71,6 +76,7 @@
             }
         
             document.addEventListener('SOCKET_RECEIVE_DATA_HOOK', function (ev) {
+                console.log(JSON.stringify(ev.metadata));
             	window.alert(ev.metadata.data);
             });
         </script>
