@@ -56,6 +56,7 @@
             }
 
             function onConnect(k) {
+                console.log('Established connection with ', k);
                 key = k;
             }
             
@@ -76,7 +77,7 @@
             }
         
             document.addEventListener('SOCKET_RECEIVE_DATA_HOOK', function (ev) {
-                console.log(JSON.stringify(ev.metadata));
+                console.log('Data has been received: ', JSON.stringify(ev.metadata));
             	window.alert(ev.metadata.data);
             });
         </script>
