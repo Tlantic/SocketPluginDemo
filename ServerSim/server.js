@@ -15,6 +15,11 @@ onConnect = function (socket) {
 
 	console.log('- Connection from ', socket.remoteAddress, ' on port ', socket.localPort, ' established.');
 };
+onError = function () {
+	'use strict';
+	
+	console.log('- Socket error due connection unavailability!');
+};
 
 
 serverInstance = function (socket) {
@@ -26,6 +31,9 @@ serverInstance = function (socket) {
 	// add into client list
 	clients.push(socket);
 
+	// handling socket errors
+	socket.on('error', onError);
+	
 	// handle incoming messages
 	socket.on('data', function (data) {
 
