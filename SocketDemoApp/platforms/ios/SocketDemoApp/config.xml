@@ -19,6 +19,12 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="Socket">
+        <param name="ios-package" value="CDVSocketPlugin" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
     <name>SocketDemoApp</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -28,10 +34,4 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <feature name="Notification">
-        <param name="ios-package" value="CDVNotification" />
-    </feature>
-    <feature name="Socket">
-        <param name="ios-package" value="CDVSocketPlugin" />
-    </feature>
 </widget>

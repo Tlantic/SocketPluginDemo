@@ -6,9 +6,4 @@
 /Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/res/drawable-xhdpi/icon.png \
 /Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/res/values/strings.xml \
 /Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/res/xml/config.xml \
-/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/res/drawable/icon.png \
-/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/res/drawable-hdpi/icon.png \
-/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/res/drawable-ldpi/icon.png \
-/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/res/drawable-mdpi/icon.png \
-/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
 /Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/AndroidManifest.xml \

@@ -24,6 +24,11 @@
 /Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/assets/www/img/logo.png \
 /Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/assets/www/js/index.js \
 /Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/assets/www/plugins/com.tlantic.plugins.socket \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/assets/www/plugins/org.apache.cordova.dialogs \
 /Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/assets/www/plugins/com.tlantic.plugins.socket/www \
 /Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/assets/www/plugins/com.tlantic.plugins.socket/www/socket.js \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/notification.js \
+/Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android/notification.js \
 /Users/developer/Documents/tlantic/SocketPluginDemo/SocketDemoApp/platforms/android/ant-build/AndroidManifest.xml \
