@@ -3,9 +3,19 @@
         "installed": [],
         "uninstalled": []
     },
-    "config_munge": {},
+    "config_munge": {
+        "package.appxmanifest": {
+            "/Package/Capabilities": {
+                "<Capability Name=\"privateNetworkClientServer\" />": 1,
+                "<Capability Name=\"internetClient\" />": 1
+            }
+        }
+    },
     "installed_plugins": {
         "com.tlantic.plugins.socket": {
+            "PACKAGE_NAME": "SocketDemoApp"
+        },
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "SocketDemoApp"
         }
     },

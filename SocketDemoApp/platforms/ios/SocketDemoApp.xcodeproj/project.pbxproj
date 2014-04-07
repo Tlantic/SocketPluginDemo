@@ -38,8 +38,11 @@
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		D1E04AD7FA434A4FAB3B4E5E /* CDVSocketPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DD983A73DECF4C3E8E5AD252 /* CDVSocketPlugin.m */; };
-		CD46A82CEBE34A5BB709120B /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A78092F9CFD47958169658E /* Connection.m */; };
+		7F9C713867AF4F47A40F5FAB /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 2007BCDA084B4B909CE61079 /* CDVNotification.m */; };
+		E3207CE3E89E45EE9455CB1D /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 09290F45844B40E882AF0023 /* CDVNotification.bundle */; };
+		E1E93F9AE2454F54BA30DBAC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754EB535D6654FC993C545B3 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		60EFCE07BFB849CEBD22230F /* CDVSocketPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CC88218EAF4E9BAF7AE20C /* CDVSocketPlugin.m */; };
+		80945064533E42EABABACD91 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B9A31239E24616AEDB96AE /* Connection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,10 +111,14 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = SocketDemoApp/config.xml; sourceTree = "<group>"; };
 		FC6E8FDA1BA247FB9DB0BF14 /* CDVSocketPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVSocketPlugin.m; path = com.tlantic.plugins.socket/CDVSocketPlugin.m; sourceTree = "<group>"; };
-		DD983A73DECF4C3E8E5AD252 /* CDVSocketPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSocketPlugin.m"; path = "Plugins\com.tlantic.plugins.socket\CDVSocketPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		2A78092F9CFD47958169658E /* Connection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Connection.m"; path = "Plugins\com.tlantic.plugins.socket\Connection.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		845975FFF9694339A97D718E /* CDVSocketPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSocketPlugin.h"; path = "Plugins\com.tlantic.plugins.socket\CDVSocketPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		471BB3F8E688404AABF9F3B5 /* Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Connection.h"; path = "Plugins\com.tlantic.plugins.socket\Connection.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		2007BCDA084B4B909CE61079 /* CDVNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVNotification.m"; path = "Plugins\org.apache.cordova.dialogs\CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		6C2142FBBA4F4D4C9C6788D8 /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "Plugins\org.apache.cordova.dialogs\CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		09290F45844B40E882AF0023 /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "Resources\CDVNotification.bundle"; sourceTree = "<group>"; };
+		754EB535D6654FC993C545B3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		37CC88218EAF4E9BAF7AE20C /* CDVSocketPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSocketPlugin.m"; path = "Plugins\com.tlantic.plugins.socket\CDVSocketPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A6B9A31239E24616AEDB96AE /* Connection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Connection.m"; path = "Plugins\com.tlantic.plugins.socket\Connection.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		3699932924374917A214A273 /* CDVSocketPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSocketPlugin.h"; path = "Plugins\com.tlantic.plugins.socket\CDVSocketPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		9A1B053AA917495AAB38035D /* Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Connection.h"; path = "Plugins\com.tlantic.plugins.socket\Connection.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +131,7 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
+				E1E93F9AE2454F54BA30DBAC /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +213,7 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* SocketDemoApp-Info.plist */,
+				09290F45844B40E882AF0023 /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = SocketDemoApp/Resources;
@@ -217,6 +226,7 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				754EB535D6654FC993C545B3 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,10 +246,12 @@
 				55A642F2073E4D90A4FBE0E0 /* Connection.m */,
 				99A9860EDA8F402F9AD9873B /* CDVSocketPlugin.h */,
 				9E6362E5C48F4749B02F2B0A /* Connection.h */,
-				DD983A73DECF4C3E8E5AD252 /* CDVSocketPlugin.m */,
-				2A78092F9CFD47958169658E /* Connection.m */,
-				845975FFF9694339A97D718E /* CDVSocketPlugin.h */,
-				471BB3F8E688404AABF9F3B5 /* Connection.h */,
+				2007BCDA084B4B909CE61079 /* CDVNotification.m */,
+				6C2142FBBA4F4D4C9C6788D8 /* CDVNotification.h */,
+				37CC88218EAF4E9BAF7AE20C /* CDVSocketPlugin.m */,
+				A6B9A31239E24616AEDB96AE /* Connection.m */,
+				3699932924374917A214A273 /* CDVSocketPlugin.h */,
+				9A1B053AA917495AAB38035D /* Connection.h */,
 			);
 			name = Plugins;
 			path = SocketDemoApp/Plugins;
@@ -403,6 +415,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				E3207CE3E89E45EE9455CB1D /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,8 +447,9 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				D1E04AD7FA434A4FAB3B4E5E /* CDVSocketPlugin.m in Sources */,
-				CD46A82CEBE34A5BB709120B /* Connection.m in Sources */,
+				7F9C713867AF4F47A40F5FAB /* CDVNotification.m in Sources */,
+				60EFCE07BFB849CEBD22230F /* CDVSocketPlugin.m in Sources */,
+				80945064533E42EABABACD91 /* Connection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

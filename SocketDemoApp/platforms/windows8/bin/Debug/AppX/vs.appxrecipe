@@ -5,7 +5,7 @@
     <WindowsUser>viniciusl</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>A7AE92256C61CBA96FB1075834F65FB89111A0FF81D4541854D8370A5E25765B</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>861C362544E1D33E8D5E1D73F0ACB041FAF1246BBD55B82272D6D1F568C99F72</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.tlantic.socketdemo_0.2.0.0_neutral__dsh9t8a1qg3mw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.tlantic.socketdemo_dsh9t8a1qg3mw!com.tlantic.socketdemo</RegisteredUserModeAppID>
     <RegisteredPackageID>com.tlantic.socketdemo</RegisteredPackageID>
@@ -16,7 +16,7 @@
     <AppXManifest Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-03T20:07:04.018</Modified>
+      <Modified>2014-04-07T19:07:35.154</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -42,43 +42,51 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\img\logo.png">
       <PackagePath>www\img\logo.png</PackagePath>
-      <Modified>2014-04-03T19:07:07.209</Modified>
+      <Modified>2014-04-07T17:36:03.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\cordova.js">
       <PackagePath>www\cordova.js</PackagePath>
-      <Modified>2014-04-03T19:07:07.231</Modified>
+      <Modified>2014-04-07T17:36:03.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\cordova_plugins.js">
       <PackagePath>www\cordova_plugins.js</PackagePath>
-      <Modified>2014-04-03T19:07:07.385</Modified>
+      <Modified>2014-04-07T17:36:03.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\js\index.js">
       <PackagePath>www\js\index.js</PackagePath>
-      <Modified>2014-04-03T19:07:07.217</Modified>
+      <Modified>2014-04-07T17:36:03.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\com.tlantic.plugins.socket\src\windows8\Connection.js">
       <PackagePath>www\plugins\com.tlantic.plugins.socket\src\windows8\Connection.js</PackagePath>
-      <Modified>2014-04-03T19:07:07.383</Modified>
+      <Modified>2014-04-07T18:43:02.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\com.tlantic.plugins.socket\src\windows8\SocketProxy.js">
       <PackagePath>www\plugins\com.tlantic.plugins.socket\src\windows8\SocketProxy.js</PackagePath>
-      <Modified>2014-04-04T16:31:30.155</Modified>
+      <Modified>2014-04-07T18:51:42.199</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\com.tlantic.plugins.socket\www\socket.js">
       <PackagePath>www\plugins\com.tlantic.plugins.socket\www\socket.js</PackagePath>
-      <Modified>2014-04-03T19:07:07.380</Modified>
+      <Modified>2014-04-07T17:37:54.448</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\org.apache.cordova.dialogs\src\windows8\NotificationProxy.js">
+      <PackagePath>www\plugins\org.apache.cordova.dialogs\src\windows8\NotificationProxy.js</PackagePath>
+      <Modified>2014-04-07T17:36:03.371</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\org.apache.cordova.dialogs\www\notification.js">
+      <PackagePath>www\plugins\org.apache.cordova.dialogs\www\notification.js</PackagePath>
+      <Modified>2014-04-07T17:36:03.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\css\index.css">
       <PackagePath>www\css\index.css</PackagePath>
-      <Modified>2014-04-03T19:07:07.207</Modified>
+      <Modified>2014-04-07T17:36:03.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\index.html">
       <PackagePath>www\index.html</PackagePath>
-      <Modified>2014-04-04T12:51:22.121</Modified>
+      <Modified>2014-04-07T19:09:23.915</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-04-03T20:07:03.546</Modified>
+      <Modified>2014-04-07T19:07:35.036</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

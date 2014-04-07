@@ -7,3 +7,7 @@ D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\re
 D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\pri.resfiles
 D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\LanguageQualifiers.txt
 D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\ProjectArchitectures.txt
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\priconfig.xml.intermediate
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\layout.resfiles.intermediate
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\resources.resfiles.intermediate
+D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\bld\Debug\pri.resfiles.intermediate

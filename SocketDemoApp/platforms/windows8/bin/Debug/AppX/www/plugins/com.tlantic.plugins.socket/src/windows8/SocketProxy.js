@@ -1,19 +1,23 @@
-cordova.define("com.tlantic.plugins.socket.SocketProxy", function (require, exports, module) {
+cordova.define("com.tlantic.plugins.socket.SocketProxy", function(require, exports, module) {     /* global module, console, Windows, require */
+    'use strict';
+
     /* global exports, console, Windows, require */
 
-    //
+    var Connection = require('com.tlantic.plugins.socket.Connection');
+
+    // connection pool
     exports.pool = [];
 
-    //
+    // builds connectionId
     exports.buildKey = function (host, port) {
         'use strict';
         return host.toLowerCase() + ':' + port;
     };
 
-    //
+    // establish TCP connection with remote endpoint 
     exports.connect = function (win, fail, args) {
         'use strict';
-        var host, port, key, socket, hostname, service;
+        var host, port, key, socket;
 
         // validating parameters
         if (args.length !== 2) {
@@ -36,12 +40,11 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function (require, expo
             } else {
 
                 // creating new connection;
-                hostname = new Windows.Networking.HostName(host);
-                service = port.toString();
-                socket = new Windows.Networking.Sockets.StreamSocket();
+                socket = new Connection(host, port);
+                socket.onReceive = exports.sendMessage;
 
                 // opening stream
-                socket.connectAsync(hostname, service).done(function () {
+                socket.connect(function () {
 
                     // adding to pool
                     console.log('Connection with ', key, ' opened successfully!');
@@ -55,6 +58,7 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function (require, expo
 
     };
 
+    // closes TCP connection and releases network resources
     exports.disposeConnection = function (socket) {
         'use strict';
 
@@ -73,6 +77,7 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function (require, expo
         }
     };
 
+    // closes a specific connection
     exports.disconnect = function (win, fail, args) {
         'use strict';
 
@@ -107,6 +112,7 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function (require, expo
 
     };
 
+    // closes all active connections
     exports.disconnectAll = function (win, fail) {
         'use strict';
         var socket, partial = false;
@@ -139,10 +145,11 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function (require, expo
         }
     };
 
+    // writes data in outputStream
     exports.send = function (win, fail, args) {
         'use strict';
 
-        var key, data, socket, writer, bufSize;
+        var key, data, socket;
 
         // validating parameters
         if (args.length !== 2) {
@@ -160,30 +167,20 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function (require, expo
                 return;
             } else {
 
-                // preparing for sending
-                writer = new Windows.Storage.Streams.DataWriter(socket.outputStream);
-                bufSize = writer.measureString(data); // Gets the UTF-8 string length.
-                writer.writeInt32(bufSize);
-                writer.writeString(data);
-
-                console.log('Sending ', data);
-
                 // flushing information
-                writer.storeAsync().done(function () {
-
-                    // detaching outputStream and with success
-                    writer.detachStream();
-                    win();
-
-                }, fail);
+                socket.write(data, win, fail);
 
             }
         }
 
     };
 
-    exports.sendMessage = function (host, port, connectionId, data) {
+    // callback to receive data written on socket inputStream
+    exports.sendMessage = function (host, port, data) {
         'use strict';
+        var key = exports.buildKey(host, port);
+    
+        window.tlantic.plugins.socket.receive(host, port, key, data);
     };
 
     require('cordova/windows8/commandProxy').add('Socket', exports);

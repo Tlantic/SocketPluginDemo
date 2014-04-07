@@ -6,11 +6,20 @@
     "config_munge": {
         "config.xml": {
             "/*": {
+                "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>": 1,
                 "<feature name=\"Socket\"><param name=\"ios-package\" value=\"CDVSocketPlugin\" /></feature>": 1
+            }
+        },
+        "framework": {
+            "AudioToolbox.framework": {
+                "true": 1
             }
         }
     },
     "installed_plugins": {
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.tlantic.socketdemo"
+        },
         "com.tlantic.plugins.socket": {
             "PACKAGE_NAME": "com.tlantic.socketdemo"
         }

@@ -90,4 +90,10 @@
     <ItemGroup>
         <Content Include="www\plugins\com.tlantic.plugins.socket\www\socket.js" />
     </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.dialogs\src\windows8\NotificationProxy.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.dialogs\www\notification.js" />
+    </ItemGroup>
 </Project>
