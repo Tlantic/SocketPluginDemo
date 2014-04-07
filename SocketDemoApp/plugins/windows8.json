@@ -6,16 +6,17 @@
     "config_munge": {
         "package.appxmanifest": {
             "/Package/Capabilities": {
+                "<Capability Name=\"internetClientServer\" />": 1,
                 "<Capability Name=\"privateNetworkClientServer\" />": 1,
                 "<Capability Name=\"internetClient\" />": 1
             }
         }
     },
     "installed_plugins": {
-        "com.tlantic.plugins.socket": {
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "SocketDemoApp"
         },
-        "org.apache.cordova.dialogs": {
+        "com.tlantic.plugins.socket": {
             "PACKAGE_NAME": "SocketDemoApp"
         }
     },

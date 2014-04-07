@@ -1,7 +1,5 @@
-cordova.define("com.tlantic.plugins.socket.SocketProxy", function(require, exports, module) {     /* global module, console, Windows, require */
+cordova.define("com.tlantic.plugins.socket.SocketProxy", function(require, exports, module) {     /* global console, exports, require */
     'use strict';
-
-    /* global exports, console, Windows, require */
 
     var Connection = require('com.tlantic.plugins.socket.Connection');
 
@@ -10,13 +8,12 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function(require, expor
 
     // builds connectionId
     exports.buildKey = function (host, port) {
-        'use strict';
         return host.toLowerCase() + ':' + port;
     };
 
     // establish TCP connection with remote endpoint 
     exports.connect = function (win, fail, args) {
-        'use strict';
+
         var host, port, key, socket;
 
         // validating parameters
@@ -60,7 +57,6 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function(require, expor
 
     // closes TCP connection and releases network resources
     exports.disposeConnection = function (socket) {
-        'use strict';
 
         var result = false;
 
@@ -79,7 +75,6 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function(require, expor
 
     // closes a specific connection
     exports.disconnect = function (win, fail, args) {
-        'use strict';
 
         var key, socket;
 
@@ -114,7 +109,7 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function(require, expor
 
     // closes all active connections
     exports.disconnectAll = function (win, fail) {
-        'use strict';
+
         var socket, partial = false;
 
         console.log('Preparing to disconnect all connections:');
@@ -147,7 +142,6 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function(require, expor
 
     // writes data in outputStream
     exports.send = function (win, fail, args) {
-        'use strict';
 
         var key, data, socket;
 
@@ -177,7 +171,7 @@ cordova.define("com.tlantic.plugins.socket.SocketProxy", function(require, expor
 
     // callback to receive data written on socket inputStream
     exports.sendMessage = function (host, port, data) {
-        'use strict';
+
         var key = exports.buildKey(host, port);
     
         window.tlantic.plugins.socket.receive(host, port, key, data);

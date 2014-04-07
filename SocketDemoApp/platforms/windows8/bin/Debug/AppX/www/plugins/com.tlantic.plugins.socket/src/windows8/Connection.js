@@ -1,7 +1,7 @@
 cordova.define("com.tlantic.plugins.socket.Connection", function(require, exports, module) { /* global module, Windows, console, require */
 'use strict';
 
-    // Connection Class Definition
+     // Connection Class Definition
     module.exports = function Connection(host, port) {
         var self = this,
         mustClose = false,
@@ -117,6 +117,4 @@ cordova.define("com.tlantic.plugins.socket.Connection", function(require, export
 
     // exporting module
     require('cordova/windows8/commandProxy').add('Connection', module);
-
-
 });

@@ -41,8 +41,8 @@
 		7F9C713867AF4F47A40F5FAB /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 2007BCDA084B4B909CE61079 /* CDVNotification.m */; };
 		E3207CE3E89E45EE9455CB1D /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 09290F45844B40E882AF0023 /* CDVNotification.bundle */; };
 		E1E93F9AE2454F54BA30DBAC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754EB535D6654FC993C545B3 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		60EFCE07BFB849CEBD22230F /* CDVSocketPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CC88218EAF4E9BAF7AE20C /* CDVSocketPlugin.m */; };
-		80945064533E42EABABACD91 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B9A31239E24616AEDB96AE /* Connection.m */; };
+		A213B7F0A47D495899227A46 /* CDVSocketPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A934D01F47E41F3A74AE4CB /* CDVSocketPlugin.m */; };
+		8F74A9D5ABAB40DBA2FB9DF3 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBADD4CC5C4DC08FC2E48C /* Connection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,10 +115,10 @@
 		6C2142FBBA4F4D4C9C6788D8 /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "Plugins\org.apache.cordova.dialogs\CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		09290F45844B40E882AF0023 /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "Resources\CDVNotification.bundle"; sourceTree = "<group>"; };
 		754EB535D6654FC993C545B3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
-		37CC88218EAF4E9BAF7AE20C /* CDVSocketPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSocketPlugin.m"; path = "Plugins\com.tlantic.plugins.socket\CDVSocketPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		A6B9A31239E24616AEDB96AE /* Connection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Connection.m"; path = "Plugins\com.tlantic.plugins.socket\Connection.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		3699932924374917A214A273 /* CDVSocketPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSocketPlugin.h"; path = "Plugins\com.tlantic.plugins.socket\CDVSocketPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		9A1B053AA917495AAB38035D /* Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Connection.h"; path = "Plugins\com.tlantic.plugins.socket\Connection.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		0A934D01F47E41F3A74AE4CB /* CDVSocketPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSocketPlugin.m"; path = "Plugins\com.tlantic.plugins.socket\CDVSocketPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		2BEBADD4CC5C4DC08FC2E48C /* Connection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Connection.m"; path = "Plugins\com.tlantic.plugins.socket\Connection.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		89C9ECEC16FE4680B9D2D2FB /* CDVSocketPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSocketPlugin.h"; path = "Plugins\com.tlantic.plugins.socket\CDVSocketPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		12DF6618D0BF4A829A9D5A05 /* Connection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Connection.h"; path = "Plugins\com.tlantic.plugins.socket\Connection.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,10 +248,10 @@
 				9E6362E5C48F4749B02F2B0A /* Connection.h */,
 				2007BCDA084B4B909CE61079 /* CDVNotification.m */,
 				6C2142FBBA4F4D4C9C6788D8 /* CDVNotification.h */,
-				37CC88218EAF4E9BAF7AE20C /* CDVSocketPlugin.m */,
-				A6B9A31239E24616AEDB96AE /* Connection.m */,
-				3699932924374917A214A273 /* CDVSocketPlugin.h */,
-				9A1B053AA917495AAB38035D /* Connection.h */,
+				0A934D01F47E41F3A74AE4CB /* CDVSocketPlugin.m */,
+				2BEBADD4CC5C4DC08FC2E48C /* Connection.m */,
+				89C9ECEC16FE4680B9D2D2FB /* CDVSocketPlugin.h */,
+				12DF6618D0BF4A829A9D5A05 /* Connection.h */,
 			);
 			name = Plugins;
 			path = SocketDemoApp/Plugins;
@@ -448,8 +448,8 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				7F9C713867AF4F47A40F5FAB /* CDVNotification.m in Sources */,
-				60EFCE07BFB849CEBD22230F /* CDVSocketPlugin.m in Sources */,
-				80945064533E42EABABACD91 /* Connection.m in Sources */,
+				A213B7F0A47D495899227A46 /* CDVSocketPlugin.m in Sources */,
+				8F74A9D5ABAB40DBA2FB9DF3 /* Connection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

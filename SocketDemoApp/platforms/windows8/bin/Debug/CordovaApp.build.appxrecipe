@@ -35,11 +35,17 @@
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\cordova.js">
       <PackagePath>www\cordova.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\cordova_plugins.js">
-      <PackagePath>www\cordova_plugins.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\js\index.js">
       <PackagePath>www\js\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\org.apache.cordova.dialogs\www\notification.js">
+      <PackagePath>www\plugins\org.apache.cordova.dialogs\www\notification.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\org.apache.cordova.dialogs\src\windows8\NotificationProxy.js">
+      <PackagePath>www\plugins\org.apache.cordova.dialogs\src\windows8\NotificationProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\com.tlantic.plugins.socket\www\socket.js">
+      <PackagePath>www\plugins\com.tlantic.plugins.socket\www\socket.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\com.tlantic.plugins.socket\src\windows8\Connection.js">
       <PackagePath>www\plugins\com.tlantic.plugins.socket\src\windows8\Connection.js</PackagePath>
@@ -47,14 +53,8 @@
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\com.tlantic.plugins.socket\src\windows8\SocketProxy.js">
       <PackagePath>www\plugins\com.tlantic.plugins.socket\src\windows8\SocketProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\com.tlantic.plugins.socket\www\socket.js">
-      <PackagePath>www\plugins\com.tlantic.plugins.socket\www\socket.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\org.apache.cordova.dialogs\src\windows8\NotificationProxy.js">
-      <PackagePath>www\plugins\org.apache.cordova.dialogs\src\windows8\NotificationProxy.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\plugins\org.apache.cordova.dialogs\www\notification.js">
-      <PackagePath>www\plugins\org.apache.cordova.dialogs\www\notification.js</PackagePath>
+    <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\github\tlantic\SocketPluginDemo\SocketDemoApp\platforms\windows8\www\css\index.css">
       <PackagePath>www\css\index.css</PackagePath>

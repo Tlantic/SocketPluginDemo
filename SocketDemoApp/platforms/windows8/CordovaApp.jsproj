@@ -67,9 +67,6 @@
         <Content Include="www\cordova.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www\cordova_plugins.js" />
-    </ItemGroup>
-    <ItemGroup>
         <Content Include="www\css\index.css" />
     </ItemGroup>
     <ItemGroup>
@@ -82,18 +79,21 @@
         <Content Include="www\js\index.js" />
     </ItemGroup>
     <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.dialogs\www\notification.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.dialogs\src\windows8\NotificationProxy.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\com.tlantic.plugins.socket\www\socket.js" />
+    </ItemGroup>
+    <ItemGroup>
         <Content Include="www\plugins\com.tlantic.plugins.socket\src\windows8\Connection.js" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="www\plugins\com.tlantic.plugins.socket\src\windows8\SocketProxy.js" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www\plugins\com.tlantic.plugins.socket\www\socket.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www\plugins\org.apache.cordova.dialogs\src\windows8\NotificationProxy.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www\plugins\org.apache.cordova.dialogs\www\notification.js" />
+        <Content Include="www\cordova_plugins.js" />
     </ItemGroup>
 </Project>
