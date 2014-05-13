@@ -36,6 +36,7 @@
             <div>
             	<br>
             	<button onclick="connect()">Connect</button><br><br>
+                <button onclick="isConnected()">is Connected</button><br><br>
             	<button onclick="send()">Send</button><br><br>
             	<button onclick="disconnect()">Disconnect</button><br><br>
                 <button onclick="disconnectAll()">DisconnectAll</button><br><br>
@@ -47,8 +48,7 @@
             app.initialize();
             
             var host = "10.56.0.62",
-            	port = 18002,
-            	data = "This is my fake data",
+            	data = "-- data to be sent --",
                 key = "";
             
             function stub(d) {
@@ -61,7 +61,8 @@
             }
             
             function connect() {
-            	window.tlantic.plugins.socket.connect(onConnect, stub, host, port);
+                window.tlantic.plugins.socket.connect(onConnect, stub, host, 18002);
+            	//window.tlantic.plugins.socket.connect(stub, stub, host, 18004);
             }
             
             function send() {
@@ -74,6 +75,10 @@
         
             function disconnectAll() {
                 window.tlantic.plugins.socket.disconnectAll(stub, stub);
+            }
+        
+            function isConnected() {
+                window.tlantic.plugins.socket.isConnected(key, stub, stub);
             }
         
             document.addEventListener('SOCKET_RECEIVE_DATA_HOOK', function (ev) {
