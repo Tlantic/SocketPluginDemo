@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E9F5716A-89A1-4D20-BC24-BFC651DF3967</string>
+	<string>2EE83047-8198-4546-BA72-A0BC861F1293</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SocketDemoApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3EF33E4E-65B3-4AE5-A812-B392A6FAE20D</key>
+		<key>995399A2-9431-4D74-BE67-AD853AA99611</key>
 		<string>https://github.com/tlantic/SocketPluginDemo</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SocketDemoApp/platforms/ios/SocketDemoApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3EF33E4E-65B3-4AE5-A812-B392A6FAE20D</key>
+		<key>995399A2-9431-4D74-BE67-AD853AA99611</key>
 		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3EF33E4E-65B3-4AE5-A812-B392A6FAE20D</string>
+	<string>995399A2-9431-4D74-BE67-AD853AA99611</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3EF33E4E-65B3-4AE5-A812-B392A6FAE20D</string>
+			<string>995399A2-9431-4D74-BE67-AD853AA99611</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SocketPluginDemo</string>
 		</dict>

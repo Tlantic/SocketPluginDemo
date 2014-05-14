@@ -1,4 +1,4 @@
-cordova.define("com.tlantic.plugins.socket.Socket", function(require, exports, module) { /* global module, require, document */
+/* global module, require, document */
 var exec = require('cordova/exec');
 
 //
@@ -58,5 +58,3 @@ Socket.prototype.receive = function (host, port, connectionId, chunk) {
     document.dispatchEvent(evReceive);
 };
 module.exports = new Socket();
-
-});

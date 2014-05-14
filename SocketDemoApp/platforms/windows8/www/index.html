@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ 
+ http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+ -->
 <html>
     <head>
         <meta charset="utf-8" />
@@ -36,6 +36,7 @@
             <div>
             	<br>
             	<button onclick="connect()">Connect</button><br><br>
+                <button onclick="isConnected()">is Connected</button><br><br>
             	<button onclick="send()">Send</button><br><br>
             	<button onclick="disconnect()">Disconnect</button><br><br>
                 <button onclick="disconnectAll()">DisconnectAll</button><br><br>
@@ -46,40 +47,44 @@
         <script type="text/javascript">
             app.initialize();
             
-            var host = "10.56.0.26",
-            	port = 18002,
-            	data = "This is my fake data",
-                key = "";
+            var host = "10.56.0.62",
+            data = "-- data to be sent --",
+            key = "";
             
             function stub(d) {
             	console.log(d);
             }
-
-            function onConnect(k) {
-                console.log('Established connection with ', k);
-                key = k;
-            }
-            
-            function connect() {
-            	window.tlantic.plugins.socket.connect(onConnect, stub, host, port);
-            }
-            
-            function send() {
-            	window.tlantic.plugins.socket.send(stub, stub, key, data);
-            }
-            
-            function disconnect() {
-            	window.tlantic.plugins.socket.disconnect(stub, stub, key);
-            }
         
-            function disconnectAll() {
-                window.tlantic.plugins.socket.disconnectAll(stub, stub);
-            }
+        function onConnect(k) {
+            console.log('Established connection with ', k);
+            key = k;
+        }
         
-            document.addEventListener('SOCKET_RECEIVE_DATA_HOOK', function (ev) {
-                console.log('Data has been received: ', JSON.stringify(ev.metadata));
-            	window.navigator.notification.alert(ev.metadata.data);
-            });
-        </script>
+        function connect() {
+            window.tlantic.plugins.socket.connect(onConnect, stub, host, 18002);
+            //window.tlantic.plugins.socket.connect(stub, stub, host, 18004);
+        }
+        
+        function send() {
+            window.tlantic.plugins.socket.send(stub, stub, key, data);
+        }
+        
+        function disconnect() {
+            window.tlantic.plugins.socket.disconnect(stub, stub, key);
+        }
+        
+        function disconnectAll() {
+            window.tlantic.plugins.socket.disconnectAll(stub, stub);
+        }
+        
+        function isConnected() {
+            window.tlantic.plugins.socket.isConnected(key, stub, stub);
+        }
+        
+        document.addEventListener('SOCKET_RECEIVE_DATA_HOOK', function (ev) {
+                                  console.log('Data has been received: ', JSON.stringify(ev.metadata));
+                                  window.navigator.notification.alert(ev.metadata.data);
+                                  });
+            </script>
     </body>
 </html>

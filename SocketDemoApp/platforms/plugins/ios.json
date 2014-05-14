@@ -1,0 +1,31 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Socket\"><param name=\"ios-package\" value=\"CDVSocketPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "AudioToolbox.framework": []
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.tlantic.plugins.socket": {
+            "PACKAGE_NAME": "com.tlantic.socketdemo"
+        }
+    },
+    "dependent_plugins": {}
+}

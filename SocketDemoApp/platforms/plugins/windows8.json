@@ -1,0 +1,34 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "package.appxmanifest": {
+                "parents": {
+                    "/Package/Capabilities": [
+                        {
+                            "xml": "<Capability Name=\"internetClientServer\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<Capability Name=\"privateNetworkClientServer\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<Capability Name=\"internetClient\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.tlantic.plugins.socket": {
+            "PACKAGE_NAME": "SocketDemoApp"
+        }
+    },
+    "dependent_plugins": {}
+}
