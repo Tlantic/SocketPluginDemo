@@ -3,7 +3,13 @@ var net = require('net'),
 	clients = [],
 	serverInstance,
 	onListen,
-	onConnect;
+	onConnect,
+	simulPack = {
+		"jsonrpc":"2.0",
+		"result":{
+			"posStatus": "'"
+		}
+	};
 
 onListen = function () {
 	'use strict';
@@ -40,7 +46,8 @@ serverInstance = function (socket) {
 		if (data.length > 1 ) {
 			console.log('- Received information on port ', socket.localPort, ': ', data.toString('utf-8'));
 			console.log('- Replied to ' + socket.name);
-			socket.write('This is my answer: ' + Date.now().toString() + '\n');
+			//socket.write('This is my answer: ' + Date.now().toString() + '\n');
+			socket.write(JSON.stringify(simulPack) + '\n');
 		}
 	});
 

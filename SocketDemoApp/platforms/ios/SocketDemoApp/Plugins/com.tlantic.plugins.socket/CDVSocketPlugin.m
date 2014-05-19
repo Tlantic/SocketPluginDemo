@@ -336,13 +336,21 @@
     
     // Handling escape chars
     NSMutableString *data = [NSMutableString stringWithString : chunk];
+    
+    // double quotes
+    [data replaceOccurrencesOfString:@"\\\"" withString:@"\"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [data length])];
+    [data replaceOccurrencesOfString:@"\"" withString:@"\\\"" options:NSCaseInsensitiveSearch range:NSMakeRange(0, [data length])];
+    
+    
+    
+    // EOF
     [data replaceOccurrencesOfString   : @"\n"
                             withString : @"\\n"
                             options    : NSCaseInsensitiveSearch
                             range      : NSMakeRange(0, [data length])];
     
     // Relay to webview
-    NSString *receiveHook = [NSString stringWithFormat : @"window.tlantic.plugins.socket.receive('%@', %d, '%@', '%@' );",
+    NSString *receiveHook = [NSString stringWithFormat : @"window.tlantic.plugins.socket.receive(\"%@\", %d, \"%@\", \"%@\" );",
                                 host, port, [self buildKey : host : port], [NSString stringWithString : data]];
     
     [self writeJavascript:receiveHook];
