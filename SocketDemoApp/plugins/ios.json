@@ -24,7 +24,7 @@
     },
     "installed_plugins": {
         "com.tlantic.plugins.socket": {
-            "PACKAGE_NAME": "com.tlantic.socketdemo"
+            "PACKAGE_NAME": "com.tlantic.demo.socket"
         }
     },
     "dependent_plugins": {}

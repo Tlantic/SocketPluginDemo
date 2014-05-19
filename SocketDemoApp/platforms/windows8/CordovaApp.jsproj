@@ -90,4 +90,16 @@
     <ItemGroup>
         <Content Include="www/plugins/com.tlantic.plugins.socket/www/socket.js" />
     </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\com.tlantic.plugins.socket\www\socket.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\com.tlantic.plugins.socket\src\windows8\Connection.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\com.tlantic.plugins.socket\src\windows8\SocketProxy.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\cordova_plugins.js" />
+    </ItemGroup>
 </Project>
